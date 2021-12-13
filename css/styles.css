@@ -1,0 +1,70 @@
+/*Master styles*/
+/* body {
+    margin: 0px;
+    padding: 0px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+} */
+
+header {
+    display: grid;
+    grid-template-columns: 1fr;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* nav styles */
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 18px;
+    background-color: #4b5058
+}
+
+.left-side {
+    display: flex;
+}
+
+/* nav buttons left side */
+.nav-wrapper > .left-side > div {
+    margin-right: 20px;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* controls the nav links */
+.nav-link-wrapper {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.nav-link-wrapper a {
+    color: #e6e6e6;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+/* color of text underline during hover */
+.nav-link-wrapper:hover {
+    border-bottom: 1px solid black;
+}
+
+/* color of text underline */
+.active-nav-link {
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+/* color of text with hover*/
+.nav-link-wrapper a:hover {
+    color: black;
+}
+
+/* color of current link's non-hover text */
+.active-nav-link a {
+    color:rgb(255, 255, 255) !important;
+}
+
+/* right side text */
+.right-side {
+    color: #e6e6e6;
+}
