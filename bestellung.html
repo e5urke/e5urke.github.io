@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Bestellung</title>
+    <link rel="stylesheet" type="text/css" href="css/colorpicker.css">
+    <script src="script/jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function () 
+        {
+            $(function () { $(".inner-lining-btn-selected").css("background-color", "#6e7172"); });
+            $(".inner-lining-btn").click(function () {
+                $(".inner-lining-btn-colorName").text(this.title);
+                $(".inner-lining-btn-selected").css("background-color", $(this).css("background-color"));
+            });
+            $(".inner-lining-btn-color-picker").click(function () {
+                $(".inner-lining-btn-color-picker-body").toggle();
+            });
+
+            $(function () { $(".stitch-btn-selected").css("background-color", "#6e7172"); });
+            $(".stitch-btn").click(function () {
+                $(".stitch-btn-colorName").text(this.title);
+                $(".stitch-btn-selected").css("background-color", $(this).css("background-color"));
+            });
+            $(".stitch-btn-color-picker").click(function () {
+                $(".stitch-btn-color-picker-body").toggle();
+            });
+
+            $(function () { $(".main-color-btn-selected").css("background-color", "#6e7172"); });
+            $(".main-color-btn").click(function () {
+                $(".main-color-btn-colorName").text(this.title);
+                $(".main-color-btn-selected").css("background-color", $(this).css("background-color"));
+            });
+            $(".main-color-btn-color-picker").click(function () {
+                $(".main-color-btn-color-picker-body").toggle();
+            });
+
+            $(function () { $(".two-tone-base-color-btn-selected").css("background-color", "#6e7172"); });
+            $(".two-tone-base-color-btn").click(function () {
+                $(".two-tone-base-color-btn-colorName").text(this.title);
+                $(".two-tone-base-color-btn-selected").css("background-color", $(this).css("background-color"));
+            });
+            $(".two-tone-base-color-btn-color-picker").click(function () {
+                $(".two-tone-base-color-btn-color-picker-body").toggle();
+            });
+        });
+    </script>
+</head>
+
+<script>
+    const picker = ( template ) => `
+    <div class="${template}-color-picker color-picker">
+    <div class="summary-info">
+        <div class="info">
+            <p class="${template}-colorName">Rauch</p>
+        </div>
+        <div class="${template}-selected color-selected"></div>
+    </div>
+</div>
+<div class="${template}-color-picker-body color-picker-body" style="display: none;">
+    <div class="colors">
+        <div class="${template} color-selector" title="Weiß" id="white" value="weiß" style="background: #fff"></div>
+        <div class="${template} color-selector" title="Lichtgrau" id="lightgrey" style="background: #d1d2d4"></div>
+        <div class="${template} color-selector" title="Taupe" id="taupe" style="background: #9a8e71"></div>
+        <div class="${template} color-selector" title="Rauch" id="smoke" style="background: #6e7172"></div>
+        <div class="${template} color-selector" title="Schwarz" id="black" style="background: #141414"></div>
+        <div class="${template} color-selector" title="Creme" id="cream" style="background: #ffeb9c"></div>
+        <div class="${template} color-selector" title="Gelb" id="yellow" style="background: #fff101"></div>
+        <div class="${template} color-selector" title="Orange" id="orange" style="background: #ff5000"></div>
+        <div class="${template} color-selector" title="Rot" id="red" style="background: #f50e0e"></div>
+        <div class="${template} color-selector" title="Lachs" id="salmon" style="background: #f38583"></div>
+        <div class="${template} color-selector" title="Pink" id="pink" style="background: #e12798"></div>
+        <div class="${template} color-selector" title="Wein" id="wine" style="background: #9a0337"></div>
+        <div class="${template} color-selector" title="Aubergine" id="aubergine" style="background: #341a69"></div>
+        <div class="${template} color-selector" title="Cognac" id="cognac" style="background: #a74d14"></div>
+        <div class="${template} color-selector" title="Braun" id="brown" style="background: #7c1704"></div>
+        <div class="${template} color-selector" title="Mocca" id="mocca" style="background: #3a0b00"></div>
+        <div class="${template} color-selector" title="Grün" id="green" style="background: #25a345"></div>
+        <div class="${template} color-selector" title="Moos" id="moss" style="background: #2e5a1d"></div>
+        <div class="${template} color-selector" title="Türkis" id="turquoise" style="background: #40e0D0"></div>
+        <div class="${template} color-selector" title="Petrol" id="petrol" style="background: #0fa5a6"></div>
+        <div class="${template} color-selector" title="Royal" id="royal" style="background: #0e60b8"></div>
+        <div class="${template} color-selector" title="Nightblue" id="nightblue" style="background: #0b0244"></div>
+        <div class="color-selector dummy" style="background: #0b0244"></div>
+        <div class="color-selector dummy" style="background: #0b0244"></div>
+        <div class="color-selector dummy" style="background: #0b0244"></div>
+    </div>
+</div>
+`;
+</script>
+
+<header class="container">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/bestellung.css">
+    <div class="nav-wrapper">
+        <div class="left-side">
+            <div class="nav-link-wrapper">
+                <a href="index.html">Home</a>
+            </div>
+            <div class="nav-link-wrapper active-nav-link">
+                <a href="bestellung.html">Bestellung</a>
+            </div>
+        </div>
+        <div class="right-side">
+            <div class="brand">
+                <div>n.b. Lederhandschuh Manufaktur</div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<body>
+    <main>
+        <div class="glove-images">
+            <div class="base-colors">
+                <img src="images/base_colors/handnaht/bc_grey.png" alt="base grey" class="base-images" />
+            </div>
+            <div class="base-colors-blend" id="base-colors-blend"></div>
+
+            <div class="lining-colors">
+                <img src="images/inner_linings/handnaht/il_grey.png" alt="inner grey" class="inner-linings" />
+            </div>
+            <div class="lining-colors-blend"></div>
+
+            <div class="two-tone-base-colors">
+                <img src="images/base_colors/handnaht/twotone/tt_grey.png" alt="two-tone-base-img grey"
+                    class="two-tone-base-img" style="display: none;" />
+            </div>
+            <div class="two-tone-base-colors-blend" style="display: none;"></div>
+
+            <div class="two-tone-stitch-colors">
+                <img src="images/stitching/handnaht/twotone/st_tt_grey.png" alt="two-tone-stitch-img grey"
+                    class="two-tone-stitch-img" style="display: none;" />
+            </div>
+            <div class="two-tone-stitch-colors-blend" style="display: none;"></div>
+
+            <div class="stitch-colors">
+                <img src="images/stitching/handnaht/st_grey.png" alt="stitch grey" class="stitch" />
+            </div>
+            <div class="stitch-colors-blend"></div>
+
+            <div class="leather-images">
+                <img src="images/leather/laschnaht/lt_hirsch.png" alt="leather" class="leather-image"
+                    style="display: none;" />
+            </div>
+            <div class="leather-image-blend" style="display: none;"></div>
+        </div>
+
+        <section class="choice-display">
+            <h3>Lederart</h3>
+            <div class="leather-types btn-grid">
+                <button type="button" class="leather-type lamm selected" data-name="lamm">
+                    Lamm
+                </button>
+                <button type="button" class="leather-type hirsch" data-name="hirsch">
+                    Hirsch
+                </button>
+                <button type="button" class="leather-type ziege" data-name="ziege">
+                    Ziege
+                </button>
+            </div>
+            <div class="line-separator"></div>
+            <h3>Nahtbild</h3>
+            <div class="glove-types btn-grid">
+                <button type="button" class="glove-type handnaht selected" data-name="handnaht">
+                    Hand-Naht
+                </button>
+                <button type="button" class="glove-type laschnaht" data-name="laschnaht">
+                    Links-Naht
+                </button>
+                <button type="button" class="glove-type steppnaht" data-name="steppnaht">
+                    Stepp-Naht
+                </button>
+            </div>
+            <div class="line-separator"></div>
+            <h3>Handschuhfarbe</h3>
+            <div class="dropdown">
+                <form>
+                    <select name="color-dropdown" id="color-dropdown">
+                        <option id="opt-single" value="single" selected>Einfarbig</option>
+                        <option id="opt-twotone" value="twotone">Mehrfarbig</option>
+                    </select>
+                </form>
+            </div>
+            <h4 class="two-tone-label-text" style="display: none;">Handrücken</h4>
+            <div class="two-tone-base-color-btns" id="two-tone" style="display: none"></div>
+            <script>$(".two-tone-base-color-btns").html(picker("two-tone-base-color-btn"));</script>
+            <div class="line-separator two-tone-separator" style="display: none;"></div>
+            <h4 class="two-tone-label-text" style="display: none;">Handinnenfläche</h4>
+            <div class="main-color-btns" id="single-tone"></div>
+            <script>$(".main-color-btns").html(picker("main-color-btn"));</script>
+            <div class="line-separator"></div>
+            <h3>Schichtelfarbe</h3>
+            <div class="lining-color-btns"></div>
+            <script>$(".lining-color-btns").html(picker("inner-lining-btn"));</script>
+            <div class="line-separator stitch-color-separator"></div>
+            <h3 class="stitch-title">Nahtfarbe</h3>
+            <div class="stitch-color-btns">
+            <script>$(".stitch-color-btns").html(picker("stitch-btn"));</script>
+        </section>
+
+    </main>
+    <script src="script/main.js"></script>
+</body>
+
+</html>
