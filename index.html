@@ -17,6 +17,9 @@
             });
             $(".inner-lining-btn-color-picker").click(function () {
                 $(".inner-lining-btn-color-picker-body").toggle();
+                if( $(".inner-lining-btn-color-picker-body").css("visibility") != "hidden"){
+                    $(".inner-lining-btn-color-picker-body")[0].scrollIntoView({behavior: "smooth", block: "end"});
+                }
             });
 
             $(function () { $(".stitch-btn-selected").css("background-color", "#6e7172"); });
@@ -26,6 +29,9 @@
             });
             $(".stitch-btn-color-picker").click(function () {
                 $(".stitch-btn-color-picker-body").toggle();
+                if( $(".stitch-btn-color-picker-body").css("visibility") != "hidden"){
+                    $(".stitch-btn-color-picker-body")[0].scrollIntoView({behavior: "smooth", block: "end"});
+                }
             });
 
             $(function () { $(".main-color-btn-selected").css("background-color", "#6e7172"); });
@@ -35,6 +41,9 @@
             });
             $(".main-color-btn-color-picker").click(function () {
                 $(".main-color-btn-color-picker-body").toggle();
+                if( $(".main-color-btn-color-picker-body").css("visibility") != "hidden"){
+                    $(".main-color-btn-color-picker-body")[0].scrollIntoView({behavior: "smooth", block: "end"});
+                }
             });
 
             $(function () { $(".two-tone-base-color-btn-selected").css("background-color", "#6e7172"); });
@@ -44,6 +53,9 @@
             });
             $(".two-tone-base-color-btn-color-picker").click(function () {
                 $(".two-tone-base-color-btn-color-picker-body").toggle();
+                if( $(".two-tone-base-color-btn-color-picker-body").css("visibility") != "hidden"){
+                    $(".two-tone-base-color-btn-color-picker-body")[0].scrollIntoView({behavior: "smooth", block: "end"});
+                }
             });
         });
     </script>
