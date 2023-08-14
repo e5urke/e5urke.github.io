@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2333dba5.css",
+    "main.js": "/static/js/main.f02d3aed.js",
+    "static/js/787.d1367d38.chunk.js": "/static/js/787.d1367d38.chunk.js",
+    "static/media/lt_hirsch_inverted.png": "/static/media/lt_hirsch_inverted.49858a24ebe2e9eab7cc.png",
+    "static/media/il_grey.png": "/static/media/il_grey.e9381a6d620325d52883.png",
+    "static/media/lt_ziege_inverted.png": "/static/media/lt_ziege_inverted.fecdae4116d6bc0c31ac.png",
+    "static/media/bc_grey.png": "/static/media/bc_grey.bfbdf86000e231c7ce21.png",
+    "static/media/st_grey.png": "/static/media/st_grey.439278156f238816fab0.png",
+    "static/media/tt_grey.png": "/static/media/tt_grey.63d2096ae3a40ae2b015.png",
+    "static/media/st_tt_grey.png": "/static/media/st_tt_grey.0394ade2b4519b438c39.png",
+    "static/media/bc_inverted.png": "/static/media/bc_inverted.c9d66453f59b0ba910ad.png",
+    "static/media/il_inverted.png": "/static/media/il_inverted.b16903fd178a87e36d0f.png",
+    "static/media/st_tt_inverted.png": "/static/media/st_tt_inverted.2e0bbc1b41caa4c836fe.png",
+    "static/media/st_inverted.png": "/static/media/st_inverted.811792f12aff28835ae0.png",
+    "static/media/schaufenster_gloves.jpg": "/static/media/schaufenster_gloves.21754dbced58fdc89286.jpg",
+    "static/media/nb_logo.png": "/static/media/nb_logo.b7f5a1a3c5a635147c0f.png",
+    "static/media/tt_inverted.png": "/static/media/tt_inverted.b57851d2190d067a2bb5.png",
+    "static/media/hand_draw.jpg": "/static/media/hand_draw.a76032bf4b5ed6b9303d.jpg",
+    "static/media/overlay_empty.png": "/static/media/overlay_empty.31431663584217066ace.png",
+    "static/media/eye.svg": "/static/media/eye.6ce3df5b55093940d04071dd71f80ce1.svg",
+    "index.html": "/index.html",
+    "main.2333dba5.css.map": "/static/css/main.2333dba5.css.map",
+    "main.f02d3aed.js.map": "/static/js/main.f02d3aed.js.map",
+    "787.d1367d38.chunk.js.map": "/static/js/787.d1367d38.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2333dba5.css",
+    "static/js/main.f02d3aed.js"
+  ]
+}
