@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.a86915f7.css",
-    "main.js": "/static/js/main.6fa8ce64.js",
+    "main.css": "/static/css/main.fceda5e3.css",
+    "main.js": "/static/js/main.08323a4f.js",
     "static/js/787.d1367d38.chunk.js": "/static/js/787.d1367d38.chunk.js",
     "static/media/lt_hirsch_inverted.png": "/static/media/lt_hirsch_inverted.49858a24ebe2e9eab7cc.png",
     "static/media/il_grey.png": "/static/media/il_grey.e9381a6d620325d52883.png",
@@ -14,6 +14,12 @@
     "static/media/il_inverted.png": "/static/media/il_inverted.b16903fd178a87e36d0f.png",
     "static/media/st_tt_inverted.png": "/static/media/st_tt_inverted.2e0bbc1b41caa4c836fe.png",
     "static/media/st_inverted.png": "/static/media/st_inverted.811792f12aff28835ae0.png",
+    "static/media/preview_Schurrwolle.png": "/static/media/preview_Schurrwolle.fbfc6f03def04c970674.png",
+    "static/media/preview_Cashmere.png": "/static/media/preview_Cashmere.8c391ca1f88b93241f3f.png",
+    "static/media/preview_Lamm.png": "/static/media/preview_Lamm.ecb4ef397ca5d1cfe3df.png",
+    "static/media/preview_Hirsch.png": "/static/media/preview_Hirsch.17f7589b842302ba9fa2.png",
+    "static/media/preview_Ziege.png": "/static/media/preview_Ziege.475fa21ba2232c86c15b.png",
+    "static/media/preview_Seide.png": "/static/media/preview_Seide.bd63f559e6ab0753bae1.png",
     "static/media/schaufenster_gloves.jpg": "/static/media/schaufenster_gloves.21754dbced58fdc89286.jpg",
     "static/media/nb_logo.png": "/static/media/nb_logo.b7f5a1a3c5a635147c0f.png",
     "static/media/tt_inverted.png": "/static/media/tt_inverted.b57851d2190d067a2bb5.png",
@@ -21,12 +27,12 @@
     "static/media/overlay_empty.png": "/static/media/overlay_empty.31431663584217066ace.png",
     "static/media/eye.svg": "/static/media/eye.cce04418a70046ece34b3e288c7c2c88.svg",
     "index.html": "/index.html",
-    "main.a86915f7.css.map": "/static/css/main.a86915f7.css.map",
-    "main.6fa8ce64.js.map": "/static/js/main.6fa8ce64.js.map",
+    "main.fceda5e3.css.map": "/static/css/main.fceda5e3.css.map",
+    "main.08323a4f.js.map": "/static/js/main.08323a4f.js.map",
     "787.d1367d38.chunk.js.map": "/static/js/787.d1367d38.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a86915f7.css",
-    "static/js/main.6fa8ce64.js"
+    "static/css/main.fceda5e3.css",
+    "static/js/main.08323a4f.js"
   ]
 }
